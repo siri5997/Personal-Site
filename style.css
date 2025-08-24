@@ -1,6 +1,113 @@
-body{
-    background-color:grey;
-    font-family: 'Courier New', Courier, monospace;
-    font-palette: white
-    ;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
+
+body {
+  line-height: 1.6;
+  background: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 15px 0;
+}
+
+nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00adb5;
+}
+
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to right, #00adb5, #393e46);
+  color: #fff;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 50px;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+section {
+  width: 80%;
+  margin: 50px auto;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #00adb5;
+}
+
+.about, .contact {
+  text-align: center;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
