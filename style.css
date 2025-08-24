@@ -1,4 +1,6 @@
-.body{
-    background-color: blue;
+body{
+    background-color:grey;
     font-family: 'Courier New', Courier, monospace;
+    font-palette: white
+    ;
 }
